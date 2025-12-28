@@ -1,33 +1,18 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-    darkMode: "class",
-    content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  darkMode: "class",
+  content: ["./src/**/*.{ts,tsx}"],
   theme: {
-  	extend: {
-  		colors: {
-  			osb: {
-  				navy: '#00427A',
-  				green: '#008B72'
-  			},
-  			background: 'var(--background)',
-  			foreground: 'var(--foreground)'
-  		},
-  		backgroundImage: {
-  			'osb-gradient': 'linear-gradient(135deg, #00427A 0%, #008B72 100%)'
-  		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+    extend: {
+      colors: {
+        osb: {
+          navy: "#00427A",
+          green: "#008B72",
+        },
+      },
+    },
   },
   plugins: [require("tailwindcss-animate")],
 };
-
 export default config;
