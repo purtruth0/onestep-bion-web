@@ -1,20 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
+  :root {
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --osb-navy: #00427A;
+    --osb-green: #008B72;
+    --radius: 1rem;
   }
-  body {
-    font-family: 'Noto Sans KR', sans-serif;
-    @apply bg-gray-50 text-gray-900;
-  }
-  section {
-    scroll-margin-top: 5rem;
-  }
+}
+
+@theme {
+  --color-osb-navy: var(--osb-navy);
+  --color-osb-green: var(--osb-green);
+  --font-sans: 'Noto Sans KR', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif !important;
+  background-color: #f9fafb; /* bg-gray-50 직접 지정 */
+  color: #111827; /* text-gray-900 직접 지정 */
+}
+
+section {
+  scroll-margin-top: 5rem;
 }
 
 .gradient-osb {
