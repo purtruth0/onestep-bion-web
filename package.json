@@ -19,7 +19,8 @@
 	  "clsx": "latest",
 	  "tailwind-merge": "latest",
 	  "class-variance-authority": "latest",
-	  "@radix-ui/react-slot": "latest"
+	  "@radix-ui/react-slot": "latest",
+	  "@opennextjs/cloudflare": "latest"
 	},
 	"devDependencies": {
 		"@eslint/eslintrc": "3",
